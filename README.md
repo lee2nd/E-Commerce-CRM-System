@@ -6,10 +6,10 @@ Mainly used for 3 e-commerce platform CRM data, like yahoo, ruten and shopee and
 The feature include:
 1. Automated computing.
 2. Automated separating the summary information into 2 parts.
-3. Thoughtful UX
-4. Concise UI
-5. Data visualization
-6. Customized drop down list
+3. Thoughtful UX.
+4. Concise UI.
+5. Data visualization.
+6. Customized drop down list.
 
 The most difficult points:
 1. With 2 user using simultaneously, and it must separate the summary information into A, B part.
