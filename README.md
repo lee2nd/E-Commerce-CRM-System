@@ -16,4 +16,4 @@ The most difficult points:
 2. It needed to update some platform fee ratio high frequency.
 3. User can't wait too long for upgrading.
 
-This side projects was totally completed by myself and the coding technique was trained when I was in the ACNielsen. Credited to my manager, "Lavan". Thanks!
+This side projects was totally completed by myself and the coding technique was trained when I was in the ACNielsen. More importantly, this project brought me some extra income. Credited to my manager, "Lavan". Thanks!
