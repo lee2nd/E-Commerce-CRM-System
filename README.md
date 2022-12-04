@@ -12,7 +12,7 @@ The feature include:
 6. Customized drop down list.
 
 The most difficult points:
-1. With 2 user using simultaneously, and it must separate the summary information into A, B part.
+1. With 2 users using simultaneously, and it must separate the summary information into A, B part.
 2. It needed to update some platform fee ratio high frequency.
 3. User can't wait too long for upgrading.
 
