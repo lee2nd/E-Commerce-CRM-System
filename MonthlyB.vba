@@ -1,0 +1,297 @@
+Sub MonthB()
+
+    Dim DaySheetB, MonthBsheet As Worksheet
+    Set DaySheetB = ThisWorkbook.Sheets("日報表B")
+    Set MonthBsheet = ThisWorkbook.Sheets("月報表B")
+
+    With DaySheetB
+        
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodJanuary
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 1
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+            
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodFebruray
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 2
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodMarch
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 3
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodApril
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 4
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodMay
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 5
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodJune
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 6
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodJuly
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 7
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodAugust
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 8
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodSeptember
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 9
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+            
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodOctober
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 10
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+            
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodNovember
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 11
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+            
+            TotalRevenue = 0
+            TotalCost = 0
+            .UsedRange.AutoFilter Field:=1, Operator:=xlFilterDynamic, Criteria1:=xlFilterAllDatesInPeriodDecember
+            TotalRevenue = Application.WorksheetFunction.Sum(.Range("D:D").SpecialCells(xlCellTypeVisible))
+            TotalCost = Application.WorksheetFunction.Sum(.Range("K:K").SpecialCells(xlCellTypeVisible))
+            TotalDiscount = Application.WorksheetFunction.Sum(.Range("E:G").SpecialCells(xlCellTypeVisible))
+            TotalFee = Application.WorksheetFunction.Sum(.Range("H:J").SpecialCells(xlCellTypeVisible))
+            
+            TotalRevenue = WorksheetFunction.Round(TotalRevenue, 0)
+            TotalCost = WorksheetFunction.Round(TotalCost, 0)
+            TotalDiscount = WorksheetFunction.Round(TotalDiscount, 0)
+            TotalFee = WorksheetFunction.Round(TotalFee, 0)
+            
+            With MonthBsheet
+                    MonthBsheetLastRow = .Range("A1048576").End(xlUp).Row
+                    .Cells(MonthBsheetLastRow + 1, 1) = 12
+                    .Cells(MonthBsheetLastRow + 1, 2) = TotalRevenue
+                    .Cells(MonthBsheetLastRow + 1, 3) = TotalCost
+                    .Cells(MonthBsheetLastRow + 1, 4) = TotalDiscount
+                    .Cells(MonthBsheetLastRow + 1, 5) = TotalFee
+            End With
+            
+        End With
+        
+        With MonthBsheet
+        
+            '刪除重複資料
+            .UsedRange.RemoveDuplicates Columns:=Array(1, 2, 3, 4, 5), Header:=xlYes
+            
+            '調整字體
+            .Cells.Font.Size = 11
+            .Cells.Font.Name = "微軟正黑體"
+            .Cells.VerticalAlignment = xlVAlignCenter
+            .Cells.HorizontalAlignment = xlHAlignLeft
+    
+            '自動調整欄寬
+            .Columns("A:C").AutoFit
+        
+        End With
+        
+        DaySheetB.AutoFilterMode = False
+        
+        ThisWorkbook.Sheets("Control Panel").Activate
+        MsgBox "Complete!"
+
+End Sub
+
