@@ -117,7 +117,7 @@ Private Sub cmdOK_Click()
                         .Range("G3") = "雅虎"
                         .Range("G3").VerticalAlignment = xlVAlignCenter
                         .Range("G3").HorizontalAlignment = xlCenter
-                                          
+                                        
                     End With
                     
                 Else
@@ -127,7 +127,7 @@ Private Sub cmdOK_Click()
                 End If
 
                 Yahoo_book.Close
-               ThisWorkbook.Save
+                ThisWorkbook.Save
                 
             ElseIf Me.opt3.Value Then
                 'Open 露天 Excel File
@@ -190,8 +190,8 @@ Private Sub cmdOK_Click()
                                           
                     End With
                     
-                 '2022/10/1 改版
-                 ElseIf RutenColNum = 25 Then
+                '2022/10/1 改版
+                ElseIf RutenColNum = 25 Then
                     
                     With Ruten_sheet
                     
@@ -220,7 +220,7 @@ Private Sub cmdOK_Click()
                 End If
 
                 Ruten_book.Close
-               ThisWorkbook.Save
+                ThisWorkbook.Save
                 
             End If
             
